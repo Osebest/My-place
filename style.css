@@ -1,0 +1,38 @@
+.card{
+  padding: 50px;
+  background: linear-gradient(to right, red, blue);
+  border-radius: 5px;
+  border: 2px solid gray;
+  margin: 50px;
+  width: 10rem;
+  display: inline-block;
+}
+.scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling:auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll::-webkit-scrollbar{
+  display: non;
+}
+/* .scroll{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.card {
+  padding: 50px;
+  background: linear-gradient(to right, red, blue);
+  border-radius: 5px;
+  border: 2px solid gray;
+  margin: 50px;
+  width: 10rem;
+  flex: 0 0 auto;
+  visibility: ;
+  transition: ;
+} */
