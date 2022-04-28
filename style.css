@@ -40,12 +40,14 @@ body {
 }
 .destination:hover h2 {
     transform: rotate(0deg);
+    scale: 1.5:
 }
 
 h2 {
   margin: 0;
   transform: rotate(-45deg);
   transition: transform 0.5s;
+  scale: 1:
   text-shadow: 0 0 5px #01579b;
 }
 
