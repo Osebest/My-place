@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/My-Place/static/css/main.a37ec9e8.css",
-    "main.js": "/My-Place/static/js/main.eb1a6817.js",
-    "static/media/black.jpg": "/My-Place/static/media/black.09423d51cc57289f297e.jpg",
-    "static/media/white-stone.jpg": "/My-Place/static/media/white-stone.a6db08533e4ff8c7dcd5.jpg",
-    "index.html": "/My-Place/index.html",
-    "main.a37ec9e8.css.map": "/My-Place/static/css/main.a37ec9e8.css.map",
-    "main.eb1a6817.js.map": "/My-Place/static/js/main.eb1a6817.js.map"
+    "main.css": "/static/css/main.488d7c2f.css",
+    "main.js": "/static/js/main.eb1a6817.js",
+    "static/media/black.jpg": "/static/media/black.09423d51cc57289f297e.jpg",
+    "static/media/white-stone.jpg": "/static/media/white-stone.a6db08533e4ff8c7dcd5.jpg",
+    "index.html": "/index.html",
+    "main.488d7c2f.css.map": "/static/css/main.488d7c2f.css.map",
+    "main.eb1a6817.js.map": "/static/js/main.eb1a6817.js.map"
   },
   "entrypoints": [
-    "static/css/main.a37ec9e8.css",
+    "static/css/main.488d7c2f.css",
     "static/js/main.eb1a6817.js"
   ]
 }
