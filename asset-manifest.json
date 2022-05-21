@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/my-place/static/css/main.a2740c34.css",
-    "main.js": "/my-place/static/js/main.8a6e2e52.js",
-    "static/media/black.jpg": "/my-place/static/media/black.09423d51cc57289f297e.jpg",
-    "static/media/white-stone.jpg": "/my-place/static/media/white-stone.a6db08533e4ff8c7dcd5.jpg",
+    "main.css": "/my-place/static/css/main.073c9b0a.css",
+    "main.js": "/my-place/static/js/main.aa5c1eeb.js",
+    "static/js/787.28cb0dcd.chunk.js": "/my-place/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/my-place/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/my-place/index.html",
-    "main.a2740c34.css.map": "/my-place/static/css/main.a2740c34.css.map",
-    "main.8a6e2e52.js.map": "/my-place/static/js/main.8a6e2e52.js.map"
+    "main.073c9b0a.css.map": "/my-place/static/css/main.073c9b0a.css.map",
+    "main.aa5c1eeb.js.map": "/my-place/static/js/main.aa5c1eeb.js.map",
+    "787.28cb0dcd.chunk.js.map": "/my-place/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2740c34.css",
-    "static/js/main.8a6e2e52.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.aa5c1eeb.js"
   ]
 }
