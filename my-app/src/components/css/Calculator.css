@@ -1,0 +1,67 @@
+h1{
+  padding: 0;
+  margin: 0;
+}
+.allBtns{
+  display: grid;
+  grid: min-content / 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+  gap: 1em;
+}
+.calcBtn{
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--light);
+  font-size: 25px;
+  padding: 15px 10px;
+}
+.calcBtn:hover{
+  background: rgba(0, 0, 0, 0.8);
+}
+.op{
+  color: var(--dark);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.op:hover{
+  color: var(--light);
+}
+.equals{
+  grid-column: span 2;
+  font-size: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+.equals:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--light);
+}
+.results{
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  color: var(--dark);
+  align-items: flex-end;
+}
+.calcResults{
+  height: 50%;
+  white-space: nowrap;
+  padding-top: 3px;
+  font-size: 35px;
+  transform-origin: right bottom;
+  transition: transform .3s ease;
+  position: absolute;
+}
+.calcResults span{
+  display: inline-block;
+  overflow: hidden;
+  transition: width .3s ease;
+}
