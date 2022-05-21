@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=El+Messiri:wght@600;700&display=swap');
+:root{
+  --light: #fff;
+  --dark: black;
+  --border: rgba(255, 255, 255, 0.6);
+  --background: rgba(255, 255, 255, 0.1);
+}
+
+body{
+  background: url(./components/images/black.jpg);
+  background-size: cover;
+  font-family: "El Messiri";
+  background-position: center;
+  color: var(--light);
+}
+.dark{
+  background: url(./components/images/white-stone.jpg);
+  color: var(--dark);
+}
+.header{
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(7px);
+  padding: 3vh 5vw;
+  display: flex;
+  justify-content: space-between;
+}
