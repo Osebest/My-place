@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/My-place/static/css/main.742ca2ca.css",
+    "main.css": "/My-place/static/css/main.a8f459e2.css",
     "main.js": "/My-place/static/js/main.8daa8a40.js",
     "static/media/black.jpg": "/My-place/static/media/black.09423d51cc57289f297e.jpg",
     "static/media/white-stone.jpg": "/My-place/static/media/white-stone.a6db08533e4ff8c7dcd5.jpg",
     "index.html": "/My-place/index.html",
-    "main.742ca2ca.css.map": "/My-place/static/css/main.742ca2ca.css.map",
+    "main.a8f459e2.css.map": "/My-place/static/css/main.a8f459e2.css.map",
     "main.8daa8a40.js.map": "/My-place/static/js/main.8daa8a40.js.map"
   },
   "entrypoints": [
-    "static/css/main.742ca2ca.css",
+    "static/css/main.a8f459e2.css",
     "static/js/main.8daa8a40.js"
   ]
 }
