@@ -2,7 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Hompage from './components/Hompage';
-import Calculator from './components/Calculator';
+import Calculator from './components/Calculator/Calculator';
+import Todos from './components/ToDo/Todo';
 import Moon from './components/images/moon.png';
 import Sun from './components/images/sun.png';
 
@@ -27,8 +28,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/'  element={<Hompage />}/>
-          <Route path='/calculator' element={<Calculator />}
-          />
+          <Route path='/calculator' element={<Calculator />}/>
+          <Route path='/todos' element={<Todos />}/>
         </Routes>
     </Router>
     </React.Fragment>

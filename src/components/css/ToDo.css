@@ -1,0 +1,70 @@
+.main2{
+  background: var(--background);
+  backdrop-filter: blur(7px);
+  margin: 50px 0;
+  padding: 10px 20px;
+  text-align: center;
+  border-top: 3px solid var(--border);
+  border-bottom: 3px solid var(--border);
+}
+.checkbox:checked{
+  filter: invert(100%) hue-rotate(18deg) brightness(0.4);
+}
+.hmm{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  align-items: center;
+}
+.H1style{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  border-bottom: 2px solid rgba(0,0,0,0.6);
+}
+.btnX{
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(203, 5, 22);
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.field{
+  border: none;
+  border-radius: 15px 0px 0 15px;
+  color: var(--dark);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  font-size: large;
+}
+.field::placeholder{
+  font-size: larger;
+  color: var(--dark);
+}
+.subBtn{
+  padding: 20px 30px;
+  font-size: large;
+  background: rgba(0,0,0,0.5);
+  color: var(--light);
+  border: none;
+  cursor: pointer;
+}
+.subBtn:hover{
+  background: rgba(100, 100, 100, 0.5);
+}
+
+
+
+@media only screen and (min-width:768px){
+  .main2{
+    margin: 50px 10vw;
+    padding: 10px 40px;
+  }
+  .btnX{
+    padding: 10px;
+  }
+}
