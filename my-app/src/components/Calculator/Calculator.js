@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './css/Calculator.css';
+import '../css/Calculator.css';
 import { ButtonActions, btn } from "./CalcConfig";
 
 export default function Calculator() {

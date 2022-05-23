@@ -5,6 +5,9 @@
   --border: rgba(255, 255, 255, 0.6);
   --background: rgba(255, 255, 255, 0.1);
 }
+button{
+  -webkit-tap-highlight-color: transparent;
+}
 
 body{
   background: url(./components/images/black.jpg);
@@ -12,6 +15,7 @@ body{
   font-family: "El Messiri";
   background-position: center;
   color: var(--light);
+  -webkit-tap-highlight-color: transparent;
 }
 .dark{
   background: url(./components/images/white-stone.jpg);
