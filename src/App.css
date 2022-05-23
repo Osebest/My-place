@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=El+Messiri:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
 :root{
   --light: #fff;
   --dark: black;
@@ -12,13 +12,15 @@ button{
 body{
   background: url(./components/images/black.jpg);
   background-size: cover;
-  font-family: "El Messiri";
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 400;
   background-position: center;
   color: var(--light);
   -webkit-tap-highlight-color: transparent;
 }
 .dark{
   background: url(./components/images/white-stone.jpg);
+  backdrop-filter: blur(5px);
   color: var(--dark);
 }
 .header{
