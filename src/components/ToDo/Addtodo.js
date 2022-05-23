@@ -15,17 +15,16 @@ export default function AddTodo({addTodo}) {
   }
 
   return (
-    <form onSubmit={submit} style={{display:'flex'}}>
+    <form onSubmit={submit} className="form">
       <input 
-      className='field'
-        style={{flex:'10', padding:'10px'}} 
+      className='field' 
         name='title'
         type="text" 
         placeholder="Add Todo..."
         value={title}
         onChange={useValue}
       />
-      <input style={{flex:'1'}} className="subBtn" type="submit" value ="Submit"/>
+      <input className="subBtn" type="submit" value ="Submit"/>
     </form>
   )
 }

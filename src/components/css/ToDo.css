@@ -24,6 +24,9 @@
   margin: 15px 0;
   border-bottom: 2px solid rgba(0,0,0,0.6);
 }
+.form{
+  display: flex;
+}
 .btnX{
   padding: 5px;
   border-radius: 50%;
@@ -34,12 +37,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 .field{
+  padding-left: 20px;
   border: none;
   border-radius: 15px 0px 0 15px;
   color: var(--dark);
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   font-size: large;
+  width: 100%;
 }
 .field::placeholder{
   font-size: larger;
@@ -66,5 +71,13 @@
   }
   .btnX{
     padding: 10px;
+  }
+}
+@media only screen and (max-width:360px){
+  .subBtn{
+    padding: 15px 10px;
+  }
+  .field{
+    width: 80%;
   }
 }
