@@ -28,6 +28,7 @@ export default function Calculator() {
 
       const transform = `translateY(-25px) scale(0.7)`;
       try{
+        // eslint-disable-next-line
         let res = eval(expression);
         setExpression(res.toString());
         setTimeout(()=>{

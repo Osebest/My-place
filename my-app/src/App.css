@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=El+Messiri:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
 :root{
   --light: #fff;
   --dark: black;
@@ -12,7 +17,6 @@ button{
 body{
   background: url(./components/images/black.jpg);
   background-size: cover;
-  font-family: "El Messiri";
   background-position: center;
   color: var(--light);
   -webkit-tap-highlight-color: transparent;
