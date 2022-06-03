@@ -15,7 +15,7 @@ export default function AddTodo({addTodo}) {
   }
 
   return (
-    <form onSubmit={submit} className="form">
+    <form onSubmit={submit} className="formT">
       <input 
       className='field' 
         name='title'

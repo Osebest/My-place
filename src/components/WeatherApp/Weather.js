@@ -16,7 +16,7 @@ export default function Weather() {
   const [country, setCountry] = useState('');
   const [weathercondition, setWeathercondition] = useState('');
   const [temp, setTemp] = useState('')
-  const baseUrl = "http://api.openweathermap.org/data/2.5/forecast?zip=";
+  const baseUrl = "https://api.openweathermap.org/data/2.5/forecast?zip=";
   const apiKey = '&appid=e4eabc8d7631ab8086c4f4181078f805&units=imperial';
   let d = new Date();
   let newDate = d.toDateString();

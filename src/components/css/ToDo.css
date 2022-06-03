@@ -28,7 +28,7 @@
   padding: 10px;
   border-bottom: 2px solid rgba(0,0,0,0.6);
 }
-.form{
+.formT{
   display: flex;
 }
 .btnX{
@@ -43,7 +43,7 @@
 .field{
   padding-left: 20px;
   border: none;
-  width: 90%;
+  width: 80%;
   border-radius: 15px 0px 0 15px;
   color: var(--dark);
   background: rgba(255, 255, 255, 0.5);
