@@ -1,7 +1,7 @@
 .main2{
   background: var(--background);
   backdrop-filter: blur(7px);
-  margin: 50px 0;
+  margin: 30px 0;
   padding: 10px 20px;
   text-align: center;
   border-top: 3px solid var(--border);
@@ -43,6 +43,7 @@
 .field{
   padding-left: 20px;
   border: none;
+  width: 90%;
   border-radius: 15px 0px 0 15px;
   color: var(--dark);
   background: rgba(255, 255, 255, 0.5);
@@ -70,7 +71,7 @@
 
 @media only screen and (min-width:768px){
   .main2{
-    margin: 50px 10vw;
+    margin: 30px 10vw;
     padding: 10px 40px;
   }
   .btnX{

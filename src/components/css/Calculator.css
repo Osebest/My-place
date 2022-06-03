@@ -2,6 +2,16 @@ h1{
   padding: 0;
   margin: 0;
 }
+.mainC{
+  position: relative;
+  background: var(--background);
+  backdrop-filter: blur(7px);
+  margin: 30px 8vw;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid var(--border);
+  border-radius: 30px;
+}
 .allBtns{
   display: grid;
   grid: min-content / 1fr 1fr 1fr 1fr;
@@ -64,4 +74,12 @@ h1{
   display: inline-block;
   overflow: hidden;
   transition: width .3s ease;
+}
+@media only screen and (min-width:768px){
+  .mainC{
+    margin: 30px 25vw;
+  }
+  .back{
+    margin-left: 6em;
+  }
 }

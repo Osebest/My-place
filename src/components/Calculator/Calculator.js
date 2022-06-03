@@ -1,6 +1,9 @@
 import React, { useRef, useState } from 'react';
 import '../css/Calculator.css';
+import HomeBtn from '../HomeBtn';
 import { ButtonActions, btn } from "./CalcConfig";
+import BackBtn from '../BackBtn';
+
 
 export default function Calculator() {
   const btnRef = useRef(null);
@@ -28,6 +31,7 @@ export default function Calculator() {
 
       const transform = `translateY(-25px) scale(0.7)`;
       try{
+        // eslint-disable-next-line
         let res = eval(expression);
         setExpression(res.toString());
         setTimeout(()=>{
@@ -61,24 +65,31 @@ export default function Calculator() {
     }, 100)
   }
   return (
-    <div className='main'>
-      <h1>Calculator</h1>
-      <div className='results'>
-        <div ref={expRef} className='calcResults'></div>
-        <div className='calcResults'></div>
+    <React.Fragment>
+      <div className='back'>
+        <BackBtn />
+        <h2>Calculator App</h2>
       </div>
-      <div ref={btnRef} className='allBtns'>
-        {
-          btn.map((item, index)=>(
-            <button 
-              key={index} 
-              className={item.class}
-              onClick={()=>btnClick(item)}>
-              {item.display}
-            </button>
-          ))
-        }  
+      <div className='mainC'>
+        <h1 style={{paddingBottom:'10px'}}>Calculator</h1>
+        <div className='results'>
+          <div ref={expRef} className='calcResults'></div>
+          <div className='calcResults'></div>
+        </div>
+        <div ref={btnRef} className='allBtns'>
+          {
+            btn.map((item, index)=>(
+              <button 
+                key={index} 
+                className={item.class}
+                onClick={()=>btnClick(item)}>
+                {item.display}
+              </button>
+            ))
+          }  
+        </div>
       </div>
-    </div>
+      <HomeBtn />
+    </React.Fragment>
   )
 }
