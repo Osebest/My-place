@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-place/static/css/main.1cf404db.css",
-    "main.js": "/My-place/static/js/main.8da4ca50.js",
+    "main.css": "/My-place/static/css/main.150620f4.css",
+    "main.js": "/My-place/static/js/main.814a37f0.js",
     "static/media/Shaded-Red-Rose.svg": "/My-place/static/media/Shaded-Red-Rose.a27f3e60d548a0b3d188e909725ec105.svg",
     "static/media/black.jpg": "/My-place/static/media/black.09423d51cc57289f297e.jpg",
     "static/media/white-stone.jpg": "/My-place/static/media/white-stone.a6db08533e4ff8c7dcd5.jpg",
@@ -10,11 +10,11 @@
     "static/media/left-arrow.svg": "/My-place/static/media/left-arrow.da21225bcf530088451874c9e21c215a.svg",
     "static/media/right-arrow.svg": "/My-place/static/media/right-arrow.d19ce8f87764b5901ed2ca6f0ff22d03.svg",
     "index.html": "/My-place/index.html",
-    "main.1cf404db.css.map": "/My-place/static/css/main.1cf404db.css.map",
-    "main.8da4ca50.js.map": "/My-place/static/js/main.8da4ca50.js.map"
+    "main.150620f4.css.map": "/My-place/static/css/main.150620f4.css.map",
+    "main.814a37f0.js.map": "/My-place/static/js/main.814a37f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cf404db.css",
-    "static/js/main.8da4ca50.js"
+    "static/css/main.150620f4.css",
+    "static/js/main.814a37f0.js"
   ]
 }
