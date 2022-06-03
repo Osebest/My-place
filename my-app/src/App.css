@@ -1,35 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-*{
+*, ::after, ::before{
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+}
+.linkH{
+  text-decoration: none;
+  background-color: #161615;
+  background-image: linear-gradient(45deg, #50e024, #f70505);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  transition: transform .5s ease;
+}
+.linkH:hover{
+  transform: scale(1.05);
 }
 :root{
   --light: #fff;
   --dark: black;
   --border: rgba(255, 255, 255, 0.6);
-  --background: rgba(255, 255, 255, 0.1);
+  --background: rgba(255, 255, 255, 0.01);
 }
 button{
   -webkit-tap-highlight-color: transparent;
 }
-
+body, html{
+  height: 100%;
+}
 body{
   background: url(./components/images/black.jpg);
   background-size: cover;
   background-position: center;
   color: var(--light);
   -webkit-tap-highlight-color: transparent;
+  position: relative;
 }
 .dark{
   background: url(./components/images/white-stone.jpg);
   color: var(--dark);
 }
 .header{
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.01);
   border-bottom: 3px solid rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(7px);
   padding: 3vh 5vw;
   display: flex;
   justify-content: space-between;
+}
+.header img{
+  width:40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+.imageh{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.homeBtn{
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 0;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 3px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(7px);
+  padding: 3vh 4vw;
+  bottom: 0;
+}
+.homeBtn button{
+  border: none;
+  border-radius: 10px;
+  padding: 13px 35px;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(45deg, rgb(147, 143, 143), white);
+}
+.homeBtn button:hover{
+  background: rgb(101, 98, 98, 0.5);
+  color: #fff;
+}
+.back{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-left: 2em;
+}
+.iconC{
+  font-size: xx-large;
+  cursor: pointer;
+}
+.iconC:hover{
+  color: rgba(49, 151, 2, 0.9);
+}
+@media only screen and (max-width:400px){
+  .wait{display: none;}
 }

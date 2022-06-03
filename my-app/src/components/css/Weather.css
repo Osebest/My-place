@@ -2,7 +2,7 @@
   background: var(--background);
   backdrop-filter: blur(7px);
   max-width: 100%;
-  margin: 50px 10vw;
+  margin: 30px 10vw;
   padding: 15px 10%;
   text-align: center;
   border: 3px solid var(--border);
@@ -15,13 +15,13 @@
   margin-bottom: 5px;
   align-items: center;
 }
-form{
+.form{
   display: flex;
   flex-direction: column;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-input{
+.input{
   width: 100%;
   color: #fff;
   padding: 14px;
@@ -125,7 +125,7 @@ input:focus,textarea:focus{
 
 @media only screen and (min-width:768px){
   .main3, .data{
-    margin: 50px 22vw;
+    margin: 30px 22vw;
   }
   .temp{
     font-size: 40px;

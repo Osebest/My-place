@@ -3,6 +3,8 @@ import TodoItem from './TodoItem';
 import AddTodo from './Addtodo';
 import axios from 'axios';
 import '../css/ToDo.css';
+import HomeBtn from '../HomeBtn';
+import BackBtn from '../BackBtn';
 
 
 function Todos() {
@@ -44,11 +46,18 @@ function Todos() {
   }
 
   return (
-    <main className='main2'>
-      <h1 style={{paddingBottom:'15px'}}>Your ToDo(s)</h1>
-      <AddTodo addTodo={addTodo}/>
-      <TodoItem todos={todos} markComplete={markComplete} delTodo={delTodo}/>
-    </main>
+    <React.Fragment>
+      <div className='back'>
+        <BackBtn />
+        <h2>ToDo App</h2>
+      </div>
+      <main className='main2'>
+        <h2 style={{paddingBottom:'15px'}}>Your ToDo(s)</h2>
+        <AddTodo addTodo={addTodo}/>
+        <TodoItem todos={todos} markComplete={markComplete} delTodo={delTodo}/>
+      </main>
+      <HomeBtn />
+    </React.Fragment>
   );
 }
 

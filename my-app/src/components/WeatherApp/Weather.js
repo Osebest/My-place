@@ -1,5 +1,7 @@
 import React, {Fragment, useRef, useState} from 'react';
+import BackBtn from '../BackBtn';
 import '../css/Weather.css';
+import HomeBtn from '../HomeBtn';
 import Hot from '../images/hot.png';
 import Cold from "../images/snow.png";
 
@@ -84,12 +86,16 @@ export default function Weather() {
 
   return (
     <main>
+      <div className='back'>
+        <BackBtn />
+        <h2>Weather App</h2>
+      </div>
       <div className='main3'>
-        <h1>Weather App</h1>
-        <form>
+        <h2>Your Weather Today</h2>
+        <form className='form'>
           <div className='zip'>
             <label>Zip</label>
-            <input type="text" placeholder="Enter zip code..." id="zip" ref={zipRef}/>
+            <input className='input' type="text" placeholder="Enter zip code..." id="zip" ref={zipRef}/>
           </div>
           <textarea rows='4' cols="50" placeholder='What do you feel?...' ref={feelingRef}></textarea>
           <button className='generate' id='generate' onClick={generate}>Generate</button>
@@ -112,6 +118,7 @@ export default function Weather() {
           <p className='message'>{error}</p>
         </div>
       </div>
+      <HomeBtn />
     </main>
   )
 }
