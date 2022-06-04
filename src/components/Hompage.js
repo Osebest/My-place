@@ -40,7 +40,7 @@ export default function Hompage() {
           </div>
         </Link>
         <Link to='/slider' className='link'>
-          <div className='btn'>Photo-Album
+          <div className='btn'>Image-Slider
           <FontAwesomeIcon 
               icon={faImages}
               size='lg' pull='left'

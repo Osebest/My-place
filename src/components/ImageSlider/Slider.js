@@ -30,7 +30,7 @@ export default function Slider({reload}) {
     <React.Fragment>
       <div className='back'>
         <BackBtn />
-        <h2>Photo Album</h2>
+        <h2>Image Slider</h2>
       </div>
       <div className='container'>
         {dataSlider.map((obj, index) => {

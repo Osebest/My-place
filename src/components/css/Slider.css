@@ -24,10 +24,10 @@
   opacity: 1;
 }
 .btn-slide {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background: #f1f1f1;
+  background: rgba(242, 242, 242, 0.7);
   border: 1px solid rgba(34, 34, 34, 0.287);
   position: absolute;
   display: flex;
@@ -39,8 +39,8 @@
   background: #b5b4b4;
 }
 .btn-slide img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   pointer-events: none;
 }
 .prev {
@@ -61,8 +61,8 @@
   display: flex;
 }
 .dot {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 3px solid #f1f1f1;
   margin: 0 5px;
@@ -76,7 +76,7 @@
   margin: 10px 20px;
   padding: 20px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 2px solid #f1f1f1;
   color: #fff;
   backdrop-filter: blur(5px);
@@ -87,6 +87,14 @@
   }
   .about{
     margin: 10px 20vw;
+  }
+  .btn-slide{
+    width: 45px;
+    height: 45px;
+  }
+  .btn-slide img{
+    width: 25px;
+    height: 25px;
   }
 }
 @media only screen and (min-width:1024px) {

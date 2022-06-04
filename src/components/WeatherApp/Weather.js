@@ -16,8 +16,8 @@ export default function Weather() {
   const [country, setCountry] = useState('');
   const [weathercondition, setWeathercondition] = useState('');
   const [temp, setTemp] = useState('')
-  const baseUrl = "https://api.openweathermap.org/data/2.5/forecast?zip=";
-  const apiKey = '&appid=e4eabc8d7631ab8086c4f4181078f805&units=imperial';
+  const baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
+  const apiKey = '&appid=e4eabc8d7631ab8086c4f4181078f805&units=metric';
   let d = new Date();
   let newDate = d.toDateString();
 
@@ -44,16 +44,16 @@ export default function Weather() {
         setFeelings(<Fragment>What do you feel &#128525;?</Fragment>)
       }   
 
-      setCountry(data.city.name+', '+data.city.country);
-      const weatherinfo = data.list[0].weather[0].description;
+      setCountry(data.name+', '+data.sys.country);
+      const weatherinfo = data.weather[0].description;
       const weatherinfos = weatherinfo.charAt(0).toUpperCase() + weatherinfo.slice(1);
       setWeathercondition(weatherinfos);
-      const temperature = Math.round(data.list[0].main.temp);
-      setTemp(<Fragment>{temperature}&#176;F</Fragment>);
+      const temperature = Math.round(data.main.temp);
+      setTemp(<Fragment>{temperature}&#176;C</Fragment>);
 
-      if(temperature<=50){
+      if(temperature<=20){
         document.getElementById('weather_image').src = Cold;
-      }else if(temperature>=80){
+      }else if(temperature>=28){
         document.getElementById('weather_image').src = Hot;
       }else{
         document.getElementById('weather_image').src = 'https://freepngimg.com/thumb/weather/23698-6-weather-transparent-background.png';
@@ -94,8 +94,8 @@ export default function Weather() {
         <h2>Your Weather Today</h2>
         <form className='form'>
           <div className='zip'>
-            <label>Zip</label>
-            <input className='input' type="text" placeholder="Enter zip code..." id="zip" ref={zipRef}/>
+            <label>City</label>
+            <input className='input' type="text" placeholder="Enter city..." id="zip" ref={zipRef}/>
           </div>
           <textarea rows='4' cols="50" placeholder='What do you feel?...' ref={feelingRef}></textarea>
           <button className='generate' id='generate' onClick={generate}>Generate</button>
